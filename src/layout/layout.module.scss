@@ -1,0 +1,16 @@
+@use "../styles/variables" as v;
+
+.wrapper {
+    max-width: v.$max-width;
+    min-height: inherit;
+    width: 90%;
+    @media (min-width: #{v.$desktop-screen}) {
+        width: 80%;
+        padding: 50px;
+    }
+}
+img {
+    object-fit: cover;
+    width: 100%;
+    overflow: hidden;
+}

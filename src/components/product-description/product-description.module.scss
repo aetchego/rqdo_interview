@@ -1,0 +1,44 @@
+@use '../../styles/variables' as v;
+
+h2 {
+    @include v.font(50px, 900, v.$dark, uppercase);
+}
+
+.imgContainer {
+    @include v.ratio(100%, 25%);
+    position: relative;
+    margin-bottom: 50px;
+
+    .imgWrapper {
+        @include v.cover(100%);
+        background-color: grey;
+        display: flex;
+    }
+}
+
+.categoryContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.categoryContainer > div {
+   background-color: v.$black;
+   opacity: 0.7;
+   padding: 5px 10px;
+   @media (max-width: #{v.$smartphone-screen}) {
+    @include v.font(15px, 900, v.$white, uppercase);
+   }
+   @include v.font(20px, 900, v.$white, uppercase);
+  }
+
+  .ingredients {
+    @include v.font(18px, 500, v.$black, lowercase);
+}
+
+.allergen {
+    @include v.font(18px, 900, v.$red, lowercase);
+    span {
+        margin: 0px 5px;
+    }
+}

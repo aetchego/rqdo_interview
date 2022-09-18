@@ -1,0 +1,31 @@
+@use '../../styles/variables' as v;
+
+.searchbarWapper {
+    margin: 30px auto;
+  }
+  
+  input {
+    width: -webkit-fill-available;
+    width: -moz-available;         
+    padding: 20px;
+    background-color: transparent;
+    color: v.$dark;
+    border-radius: 0;
+    line-height: 20px;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid v.$dark;
+    @media screen and (max-width: v.$smartphone-screen) {
+        @include v.font(30px, 700);
+    }
+    @include v.font(50px, 700);
+
+    ::placeholder {
+        color: v.$dark;
+      }
+  
+    &:focus {
+        border-bottom: 3px solid v.$orange;
+        color: v.$orange;
+    }
+  }
