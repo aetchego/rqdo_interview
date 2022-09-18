@@ -3,7 +3,7 @@ export const SUCCESS = "SUCCESS";
 export const ERROR = "ERROR";
 
 export const initialState = {
-  status: null,
+  status: "INITIAL",
   response: null,
 };
 
