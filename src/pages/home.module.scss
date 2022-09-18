@@ -1,0 +1,27 @@
+@use '../styles/variables' as v;
+
+.homeWrapper {
+    @media (max-width: #{v.$smartphone-screen}) {
+        width: 100%;
+    }
+    width: 80%;
+}
+
+.cardContainer {
+    padding: 50px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px 15px;
+}
+
+.card {
+    position: relative;
+    @include v.ratio(50%, 50%, 15px);
+    @media (max-width: #{v.$smartphone-screen}) {
+        @include v.ratio(100%, 100%, 15px)
+    }
+    @media (min-width: #{v.$desktop-screen}) {
+        @include v.ratio(25%, 25%, 15px)
+    }
+
+}

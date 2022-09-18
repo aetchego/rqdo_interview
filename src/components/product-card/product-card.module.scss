@@ -1,0 +1,27 @@
+@use "../../styles/variables" as v;
+
+.card {
+  
+    @include v.cover(100%);
+
+    &:hover {
+        .description {
+            display: flex;
+        }
+    }
+    .description {
+        @include v.cover(100%);
+        justify-content: center;
+        align-items: center;
+        background-color: v.$dark;
+        opacity: 0.8;
+        display: none;
+        p {
+            @include v.font(25px, 700, v.$white, lowercase);
+            &::first-letter {
+                @include v.font(35px, 900, v.$orange)
+            }
+        }
+    }   
+
+}
