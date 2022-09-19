@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import Home from "./pages/Home";
-import Product from "./pages/Product";
+import Home from "./pages/home/Home";
+import Product from "./pages/page/Product";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";

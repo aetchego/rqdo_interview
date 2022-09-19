@@ -1,12 +1,12 @@
-import DisplayMessage from "../components/display-message/DisplayMessage";
-import Layout from "../layout/Layout";
-import ProductCard from "../components/product-card/ProductCard";
-import Searchbar from "../components/searchbar/Searchbar";
-import Spinner from "../components/spinner/Spinner";
-import { getProducts } from "../api/request";
+import DisplayMessage from "../../components/display-message/DisplayMessage";
+import Layout from "../../layout/Layout";
+import ProductCard from "../../components/product-card/ProductCard";
+import Searchbar from "../../components/searchbar/Searchbar";
+import Spinner from "../../components/spinner/Spinner";
+import { getProducts } from "../../api/request";
 import styles from "./home.module.scss";
-import { useDebounced } from "../hooks/useDebounced";
-import useFetch from "../hooks/useFetch";
+import { useDebounced } from "../../hooks/useDebounced";
+import useFetch from "../../hooks/useFetch";
 import { useState } from "react";
 
 const Home = () => {
